@@ -1,1 +1,17 @@
 ./target/*
+
+# Ignore Terraform state files
+terraform.tfstate
+terraform.tfstate.backup
+
+# Ignore .terraform directory (Terraform plugins and providers)
+.terraform/
+
+# Ignore lock files
+.terraform.lock.hcl
+
+echo ".terraform/" >> .gitignore
+echo "terraform.tfstate" >> .gitignore
+echo "terraform.tfstate.backup" >> .gitignore
+echo ".terraform.lock.hcl" >> .gitignore
+
